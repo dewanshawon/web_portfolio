@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - shawon's contact and feedbacks.</title>
+  <meta name="description" content="Contact Shawon for services, feedback, and collaboration. Professional web developer and pentester.">
+  <meta name="keywords" content="contact, web developer, pentester, feedback, services, portfolio">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Extra styles for professional look */
+    .header {
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      backdrop-filter: blur(8px);
+    }
+    .logo h1 {
+      letter-spacing: 1.5px;
+      font-size: 2rem;
+      color: var(--accent-color);
+      text-shadow: 0 2px 8px rgba(24,210,110,0.08);
+    }
+    .navmenu a {
+      position: relative;
+      padding-bottom: 4px;
+      transition: color 0.2s;
+    }
+    .navmenu a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: var(--accent-color);
+      transition: width 0.3s;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .navmenu a:hover::after, .navmenu a.active::after {
+      width: 100%;
+    }
+    .page-title {
+      background: linear-gradient(120deg, #18d26e 0%, #1a1a1a 100%);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-title .heading {
+      padding: 120px 0 60px 0;
+      text-align: center;
+    }
+    .page-title .heading h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .page-title .heading .subtitle {
+      font-size: 1.25rem;
+      color: #e0ffe6;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    .contact .info-item {
+      border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(24,210,110,0.08);
+      background: var(--surface-color);
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-bottom: 24px;
+    }
+    .contact .info-item:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 12px 40px rgba(24,210,110,0.16);
+    }
+    .contact .info-item .icon {
+      background: linear-gradient(135deg, #18d26e 60%, #1a1a1a 100%);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(24,210,110,0.12);
+    }
+    .contact .info-item .social-links a {
+      background: #232323;
+      color: #18d26e;
+      border-radius: 50%;
+      margin-right: 8px;
+      font-size: 1.5rem;
+      padding: 8px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .contact .info-item .social-links a:hover {
+      background: #18d26e;
+      color: #fff;
+    }
+    .php-email-form {
+      border-radius: 18px;
+      background: var(--surface-color);
+      box-shadow: 0 6px 32px rgba(24,210,110,0.08);
+    }
+    .form-floating > .form-control, .form-floating > .form-control:focus {
+      background: transparent;
+      color: var(--default-color);
+      border: 1.5px solid #18d26e;
+    }
+    .form-floating > label {
+      color: #b2ffcc;
+      font-weight: 500;
+    }
+    .php-email-form .privacy-note {
+      font-size: 0.95rem;
+      color: #b2ffcc;
+      margin-top: 1rem;
+      text-align: left;
+    }
+    .php-email-form button[type=submit] {
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+      padding: 12px 36px;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(24,210,110,0.12);
+    }
+    .php-email-form button[type=submit]:active {
+      transform: scale(0.98);
+    }
+    .footer {
+      background: #101c16;
+      color: #e0ffe6;
+      border-top: 2px solid #18d26e;
+    }
+    .footer .social-links a {
+      background: #232323;
+      color: #18d26e;
+      border-radius: 50%;
+      margin: 0 6px;
+      font-size: 1.3rem;
+      padding: 10px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .footer .social-links a:hover {
+      background: #18d26e;
+      color: #fff;
+    }
+    @media (max-width: 767px) {
+      .page-title .heading {
+        padding: 80px 0 40px 0;
+      }
+      .page-title .heading h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="contact-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">shawon's web portfolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Contact</h1>
+              <div class="subtitle">Let's connect! Reach out for services, collaborations, or just to say hello.</div>
+              <p class="mb-0">I value your feedback and inquiries. Please use the form below or the contact details to get in touch. I look forward to hearing from you!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Contact</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>333/A, South Monipur, Barekmollamor,</p>
+                <p>60 feet, Mirpur-2, Dhaka-1216, Bangladesh.</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+880 1793 244 543</p>
+                <p>+880 1953 936 338</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>shawon15-5747@diu.edu.bd</p>
+                <p>yeasinedewanshawon@gmail.com</p>
+                <p>yeasineDewan019@gmail.com</p>
+                <p>yeasinedewan777@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/yeasinedewan.shawon.5/" title="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="https://github.com/YeasineDewan" title="GitHub"><i class="bi bi-github"></i></a>
+                  <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://bd.linkedin.com/in/md-yeasine-dewan-shawon-07a383210" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="mailto:shawon15-4737@diu.edu.bd" title="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form mt-4" data-aos="fade-up" data-aos-delay="600" autocomplete="off">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input type="text" name="name" class="form-control" id="floatingName" placeholder="Your Name" required>
+                <label for="floatingName">Your Name</label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="Your Email" required>
+                <label for="floatingEmail">Your Email</label>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="subject" id="floatingSubject" placeholder="Subject" required>
+                <label for="floatingSubject">Subject</label>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-floating mb-3">
+                <textarea class="form-control" name="message" id="floatingMessage" placeholder="Message" style="height: 120px" required></textarea>
+                <label for="floatingMessage">Message</label>
+              </div>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <button type="submit"><i class="bi bi-send me-2"></i>Send Message</button>
+            </div>
+
+            <div class="col-md-12 privacy-note">
+              <i class="bi bi-shield-lock me-2"></i>Your information is kept private and will never be shared.
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Web Portfolio</h3>
+      <p class="lead">I'm a passionate Full Stack Web Developer and Pentester, bringing creativity and security together! With a keen eye for detail and a passion for cutting-edge technologies, I specialize in building scalable, secure, and user-friendly applications. Whether it's building seamless websites or penetrating vulnerabilities, I thrive on creating solutions that push boundaries.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/YeasineDewan" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/yeasinedewan.shawon.5/" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://bd.linkedin.com/in/md-yeasine-dewan-shawon-07a383210" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:shawon15-4737@diu.edu.bd" title="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>&copy; 2020-2025</span> <strong class="px-1 sitename">dewan_shawon</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bd.linkedin.com/in/md-yeasine-dewan-shawon-07a383210">yeasine dewan shawon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
